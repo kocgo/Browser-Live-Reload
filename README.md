@@ -1,3 +1,8 @@
+## NPM Packages
+```
+npm install --save socket.io socket.io-client
+```
+
 ## Server Setup
 _Requirements_
 ```js
@@ -5,7 +10,7 @@ _Requirements_
 const express = require("express");
 const app = express();
 const port = 3000;
-// SocketIO
+// SocketIO and FileSystem
 const socket_port = 8080;
 const io = require('socket.io').listen(socket_port);
 const fs = require('fs');
