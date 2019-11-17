@@ -1,9 +1,11 @@
 ## Server Setup
 _Requirements_
 ```js
+// Express
 const express = require("express");
 const app = express();
 const port = 3000;
+// SocketIO
 const socket_port = 8080;
 const io = require('socket.io').listen(socket_port);
 const fs = require('fs');
