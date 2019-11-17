@@ -24,10 +24,11 @@ fs.watch(__dirname, { recursive:true }, function () {
 ## Client (Front-end) Setup
 ```html
 <script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
-    <script>
-        const socket = io.connect('http://localhost:8080');
-        socket.on("file-change-event", function () {
-            window.location.reload();
-        });
-    </script>
+
+<script>
+    const socket = io.connect('http://localhost:8080');
+    socket.on("file-change-event", function () {
+        window.location.reload();
+    });
+</script>
 ```
